@@ -21,6 +21,10 @@ namespace MatrixProblem
     // a jagged array would be appropriate if we did not need the same number of columns in each row - better for a more general solution to this problem
     // int[,] matrix = {{1,2,3,4}, {4,3,2,1}, {0,2,4,6}}
 
+    // Notes: with the use of two nested for loops, within a while loop this could likely be optimized.
+    // However the bulk of the work is done in the innermost for loop, with the outer for loop acting almost as a counter, 
+    // and the while loop simply tracking how many times we have iterated already and ensuring that the matrix is updated between each round
+
     // Validations - confirm with business requirements:
     // 1. That the matrix is a 3 by 3 array, or the size required (3 x 4 in this code sample)
     // 2. That the matrix does not exceed the maximum size permitted for a two dimensional array structure - this will result in a compile time error on creation of the multidimensional array
